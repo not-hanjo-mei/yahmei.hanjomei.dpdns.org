@@ -1,0 +1,143 @@
+/* Responsive Styles */
+
+/* Tablet Devices */
+@media (max-width: 992px) {
+  /* Typography Adjustments */
+  .display-large {
+    font-size: calc(var(--display-large) * 0.85);
+  }
+
+  .display-medium {
+    font-size: calc(var(--display-medium) * 0.85);
+  }
+
+  .display-small {
+    font-size: calc(var(--display-small) * 0.85);
+  }
+
+  .headline-large {
+    font-size: calc(var(--headline-large) * 0.9);
+  }
+
+  .headline-medium {
+    font-size: calc(var(--headline-medium) * 0.9);
+  }
+
+  /* Container adjustments */
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  /* Card grid adjustments */
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  /* Typography Adjustments */
+  .display-large {
+    font-size: calc(var(--display-large) * 0.7);
+  }
+
+  .display-medium {
+    font-size: calc(var(--display-medium) * 0.7);
+  }
+
+  .display-small {
+    font-size: calc(var(--display-small) * 0.7);
+  }
+
+  .headline-large {
+    font-size: calc(var(--headline-large) * 0.8);
+  }
+
+  .headline-medium {
+    font-size: calc(var(--headline-medium) * 0.8);
+  }
+
+  /* Main content adjustments */
+  .main-content {
+    margin-left: 0;
+    margin-bottom: var(--bottom-nav-height);
+  }
+
+  /* Sections padding */
+  .section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  /* Hero section adjustments */
+  #home .container {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  #home h1 {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  #home p {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  /* Dot art adjustments */
+  .dot-art-text {
+    font-size: 6px;
+  }
+
+  /* Footer adjustments */
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+
+  /* Form adjustments */
+  .form-group {
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  /* Typography Adjustments */
+  .display-large {
+    font-size: calc(var(--display-large) * 0.6);
+  }
+
+  .display-medium {
+    font-size: calc(var(--display-medium) * 0.6);
+  }
+
+  .display-small {
+    font-size: calc(var(--display-small) * 0.6);
+  }
+
+  /* Container adjustments */
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  /* Hero section adjustments */
+  #home .container {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  /* Button adjustments */
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--spacing-sm);
+  }
+
+  .button-group .md-button {
+    width: 100%;
+  }
+
+  /* Dot art adjustments */
+  .dot-art-text {
+    font-size: 5px;
+  }
+}

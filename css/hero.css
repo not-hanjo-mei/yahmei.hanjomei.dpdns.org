@@ -1,0 +1,104 @@
+/* Hero section with dot art background */
+
+#home {
+  position: relative;
+  color: white;
+  overflow: hidden;
+  background-color: #0a2716;
+  min-height: 500px;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+#home .container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing-xxl) var(--spacing-md);
+}
+
+#home h1 {
+  margin-bottom: var(--spacing-md);
+  font-family: 'Product Sans', sans-serif;
+}
+
+#home p {
+  max-width: 600px;
+  margin-bottom: var(--spacing-xl);
+  font-family: 'Product Sans', sans-serif;
+}
+
+/* Dark mode adjustments for hero section */
+@media (prefers-color-scheme: dark) {
+  #home {
+    background-color: #000000; /* AMOLED true black */
+  }
+
+  #home::before {
+    background-color: rgba(0, 0, 0, 0.35);  /* More transparent for AMOLED */
+  }
+
+  .dot-art-text {
+    color: #a4e0af !important;  /* Brighter green for better contrast on black */
+    opacity: 0.85 !important;    /* Higher opacity for better visibility on true black */
+  }
+}
+
+/* Class-based dark mode */
+body.dark-mode #home {
+  background-color: #000000; /* AMOLED true black */
+}
+
+body.dark-mode #home::before {
+  background-color: rgba(0, 0, 0, 0.35); /* More transparent for AMOLED */
+}
+
+body.dark-mode .dot-art-text {
+  color: #a4e0af !important; /* Brighter green for better contrast on black */
+  opacity: 0.85 !important;  /* Higher opacity for better visibility on true black */
+}
+
+/* Dot art container */
+.dot-art-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Dot art styling will be applied by JavaScript */
+.dot-art-text {
+  font-family: "Cascadia Mono", "CascadiaMono", Consolas, monospace !important;
+  white-space: pre;
+  line-height: 1;
+  letter-spacing: 0 !important;
+  word-spacing: 0 !important;
+  font-kerning: none !important;
+  font-variant-ligatures: none !important;
+  font-feature-settings: "tnum" on, "lnum" on, "liga" off;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on, "liga" off;
+  font-size: 8px;
+  color: #34a853;
+  opacity: 0.9;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimers - YAH Mei</title>
+  <meta name="description" content="Legal disclaimers about the YAH Mei chatbot in multiple languages">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <!-- Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans:400,500,700&display=swap">
+
+  <!-- Cascadia Mono for dot art -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono/index.css">
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    .disclaimer-section {
+      padding: var(--spacing-xl) 0;
+    }
+
+    .disclaimer-container {
+      margin-top: var(--spacing-xl);
+    }
+
+    .language-selector {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-sm);
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .language-button {
+      background-color: var(--md-surface-variant);
+      color: var(--md-on-surface-variant);
+      padding: var(--spacing-sm) var(--spacing-md);
+      border-radius: var(--md-shape-corner-full);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .language-button:hover {
+      background-color: var(--md-primary-container);
+      color: var(--md-on-primary-container);
+    }
+
+    .language-button.active {
+      background-color: var(--md-primary);
+      color: var(--md-on-primary);
+    }
+
+    .disclaimer-content {
+      background-color: var(--md-surface);
+      padding: var(--spacing-lg);
+      border-radius: var(--md-shape-corner-medium);
+      box-shadow: 0 2px 6px var(--md-shadow);
+      margin-bottom: var(--spacing-xl);
+      max-height: 600px;
+      overflow-y: auto;
+    }
+
+    .disclaimer-content h3 {
+      margin-bottom: var(--spacing-md);
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+  
+      font-size: 1.5rem;
+    }
+
+    .disclaimer-content p {
+      margin-bottom: var(--spacing-md);
+      line-height: 1.6;
+    }
+
+    /* RTL support for Arabic */
+    .rtl {
+      direction: rtl;
+      text-align: right;
+    }
+
+    /* Dark mode adjustments */
+    @media (prefers-color-scheme: dark) {
+      .disclaimer-content {
+        border: 1px solid var(--md-outline-variant);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Rail (Sidebar) -->
+  <nav class="nav-rail">
+    <div class="logo-container">
+      <span class="material-symbols-outlined">smart_toy</span>
+    </div>
+
+    <a href="index.html" class="nav-icon" data-section="home">
+      <span class="material-symbols-outlined">home</span>
+      <span class="nav-label">Home</span>
+    </a>
+
+    <a href="index.html#about" class="nav-icon" data-section="about">
+      <span class="material-symbols-outlined">person</span>
+      <span class="nav-label">About</span>
+    </a>
+
+    <div class="nav-rail-divider"></div>
+
+    <a href="how-it-works.html" class="nav-icon" data-section="how">
+      <span class="material-symbols-outlined">code</span>
+      <span class="nav-label">How It Works</span>
+    </a>
+
+    <a href="future-plans.html" class="nav-icon" data-section="future">
+      <span class="material-symbols-outlined">rocket_launch</span>
+      <span class="nav-label">Future Plans</span>
+    </a>
+
+    <a href="disclaimer.html" class="nav-icon active" data-section="disclaimer">
+      <span class="material-symbols-outlined">gavel</span>
+      <span class="nav-label">Disclaimer</span>
+    </a>
+  </nav>
+
+  <!-- Bottom Navigation (for mobile) -->
+  <nav class="bottom-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-icon" data-section="home">
+        <span class="material-symbols-outlined">home</span>
+        <span class="nav-label">Home</span>
+      </a>
+      <a href="index.html#about" class="nav-icon" data-section="about">
+        <span class="material-symbols-outlined">person</span>
+        <span class="nav-label">About</span>
+      </a>
+      <a href="how-it-works.html" class="nav-icon" data-section="how">
+        <span class="material-symbols-outlined">code</span>
+        <span class="nav-label">How</span>
+      </a>
+      <a href="future-plans.html" class="nav-icon" data-section="future">
+        <span class="material-symbols-outlined">rocket_launch</span>
+        <span class="nav-label">Future</span>
+      </a>
+      <a href="disclaimer.html" class="nav-icon active" data-section="disclaimer">
+        <span class="material-symbols-outlined">gavel</span>
+        <span class="nav-label">Legal</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Disclaimer Section -->
+    <section id="disclaimer" class="section disclaimer-section">
+      <div class="container">
+        <h1 class="headline-large">Disclaimers</h1>
+        <p class="body-large">These disclaimers provide important information about YAH Mei's capabilities, usage guidelines, and limitations. Please select your preferred language below.</p>
+
+        <div class="disclaimer-container">
+          <div class="language-selector">
+            <button class="language-button active" data-lang="en-US">English</button>
+            <button class="language-button" data-lang="es-ES">Español</button>
+            <button class="language-button" data-lang="fr-FR">Français</button>
+            <button class="language-button" data-lang="de-DE">Deutsch</button>
+            <button class="language-button" data-lang="it-IT">Italiano</button>
+            <button class="language-button" data-lang="nl-NL">Nederlands</button>
+            <button class="language-button" data-lang="pt-BR">Português</button>
+            <button class="language-button" data-lang="ru-RU">Русский</button>
+            <button class="language-button" data-lang="uk-UA">Українська</button>
+            <button class="language-button" data-lang="ar-SA">العربية</button>
+            <button class="language-button" data-lang="ja-JP">日本語</button>
+            <button class="language-button" data-lang="ko-KR">한국어</button>
+            <button class="language-button" data-lang="zh-CN">简体中文</button>
+            <button class="language-button" data-lang="zh-TW">繁體中文</button>
+          </div>
+
+          <div id="disclaimerContent" class="disclaimer-content">
+            <!-- Default English disclaimer -->
+
+            <p>Welcome to this livestream! This channel is operated by AI, offering simple interactions but is not a real person and has limited capabilities. The AI cannot fully understand all questions or provide deeply personalized responses. Information provided is for reference only and does not constitute professional advice; use at your own risk. Please comply with platform regulations, do not use for illegal activities, and avoid sharing sensitive personal information. This account does not take responsibility for possible improper use of AI and does not represent the official position of REALITY. Thank you for your understanding and support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h2 class="title-large">YAH Mei</h2>
+            <p class="body-medium">Remember AI is only a tool. You can't just press that darn 'Generate' button. You have to think!</p>
+          </div>
+          <div class="social-links">
+            <a href="https://hanjomei.dpdns.org/" aria-label="Main Website">
+              <span class="material-symbols-outlined">home</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- JavaScript Files -->
+  <script src="js/dotart.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Disclaimers JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const disclaimers = {
+        'en-US': {
+          title: 'English Disclaimer',
+          content: 'Welcome to this livestream! This channel is operated by AI, offering simple interactions but is not a real person and has limited capabilities. The AI cannot fully understand all questions or provide deeply personalized responses. Information provided is for reference only and does not constitute professional advice; use at your own risk. Please comply with platform regulations, do not use for illegal activities, and avoid sharing sensitive personal information. This account does not take responsibility for possible improper use of AI and does not represent the official position of REALITY. Thank you for your understanding and support.',
+          rtl: false
+        },
+        'es-ES': {
+          title: 'Descargo de responsabilidad en Español',
+          content: '¡Bienvenido a esta transmisión en vivo! Este canal está operado por IA, ofreciendo interacciones simples pero no es una persona real y tiene capacidades limitadas. La IA no puede comprender completamente todas las preguntas ni proporcionar respuestas profundamente personalizadas. La información proporcionada es solo para referencia y no constituye asesoramiento profesional; úsela bajo su propio riesgo. Por favor, cumpla con las regulaciones de la plataforma, no la utilice para actividades ilegales y evite compartir información personal sensible. Esta cuenta no se hace responsable del posible uso indebido de la IA y no representa la posición oficial de REALITY. Gracias por su comprensión y apoyo.',
+          rtl: false
+        },
+        'fr-FR': {
+          title: 'Avertissement en Français',
+          content: 'Bienvenue sur ce livestream ! Cette chaîne est gérée par une IA, offrant des interactions simples mais n\'est pas une personne réelle et a des capacités limitées. L\'IA ne peut pas comprendre pleinement toutes les questions ni fournir des réponses profondément personnalisées. Les informations fournies sont uniquement à titre de référence et ne constituent pas un conseil professionnel ; utilisez-les à vos propres risques. Veuillez respecter les règlements de la plateforme, ne pas l\'utiliser pour des activités illégales et éviter de partager des informations personnelles sensibles. Ce compte n\'assume aucune responsabilité pour l\'utilisation inappropriée possible de l\'IA et ne représente pas la position officielle de REALITY. Merci pour votre compréhension et votre soutien.',
+          rtl: false
+        },
+        'de-DE': {
+          title: 'Haftungsausschluss auf Deutsch',
+          content: 'Willkommen zu diesem Livestream! Dieser Kanal wird von einer KI betrieben, die einfache Interaktionen bietet, aber keine echte Person ist und begrenzte Fähigkeiten hat. Die KI kann nicht alle Fragen vollständig verstehen oder tiefgreifend personalisierte Antworten liefern. Die bereitgestellten Informationen dienen nur als Referenz und stellen keine professionelle Beratung dar; Nutzung auf eigenes Risiko. Bitte halten Sie sich an die Plattformregeln, verwenden Sie sie nicht für illegale Aktivitäten und vermeiden Sie die Weitergabe sensibler persönlicher Informationen. Dieses Konto übernimmt keine Verantwortung für mögliche unsachgemäße Verwendung der KI und vertritt nicht die offizielle Position von REALITY. Vielen Dank für Ihr Verständnis und Ihre Unterstützung.',
+          rtl: false
+        },
+        'it-IT': {
+          title: 'Avviso di non responsabilità in Italiano',
+          content: 'Benvenuto a questa diretta streaming! Questo canale è gestito da un\'IA, che offre interazioni semplici ma non è una persona reale e ha capacità limitate. L\'IA non può comprendere completamente tutte le domande o fornire risposte profondamente personalizzate. Le informazioni fornite sono solo a scopo di riferimento e non costituiscono consulenza professionale; usale a tuo rischio. Si prega di rispettare le normative della piattaforma, non utilizzarla per attività illegali ed evitare di condividere informazioni personali sensibili. Questo account non si assume alcuna responsabilità per il possibile uso improprio dell\'IA e non rappresenta la posizione ufficiale di REALITY. Grazie per la tua comprensione e il tuo supporto.',
+          rtl: false
+        },
+        'nl-NL': {
+          title: 'Disclaimer in het Nederlands',
+          content: 'Welkom bij deze livestream! Dit kanaal wordt beheerd door AI, biedt eenvoudige interacties maar is geen echte persoon en heeft beperkte mogelijkheden. De AI kan niet alle vragen volledig begrijpen of diep gepersonaliseerde antwoorden geven. De verstrekte informatie is alleen ter referentie en vormt geen professioneel advies; gebruik op eigen risico. Houd je aan de platformregels, gebruik het niet voor illegale activiteiten en vermijd het delen van gevoelige persoonlijke informatie. Dit account neemt geen verantwoordelijkheid voor mogelijk oneigenlijk gebruik van de AI en vertegenwoordigt niet het officiële standpunt van REALITY. Bedankt voor je begrip en steun.',
+          rtl: false
+        },
+        'pt-BR': {
+          title: 'Aviso Legal em Português',
+          content: 'Bem-vindo a esta transmissão ao vivo! Este canal é operado por IA, oferecendo interações simples, mas não é uma pessoa real e tem capacidades limitadas. A IA não consegue entender completamente todas as perguntas ou fornecer respostas profundamente personalizadas. As informações fornecidas são apenas para referência e não constituem aconselhamento profissional; use por sua própria conta e risco. Por favor, cumpra com os regulamentos da plataforma, não use para atividades ilegais e evite compartilhar informações pessoais sensíveis. Esta conta não se responsabiliza pelo possível uso indevido da IA e não representa a posição oficial da REALITY. Obrigado pela sua compreensão e apoio.',
+          rtl: false
+        },
+        'ru-RU': {
+          title: 'Отказ от ответственности на Русском',
+          content: 'Добро пожаловать на эту трансляцию! Этот канал управляется ИИ, предлагая простые взаимодействия, но это не реальный человек и имеет ограниченные возможности. ИИ не может полностью понять все вопросы или предоставить глубоко персонализированные ответы. Предоставленная информация предназначена только для ознакомления и не является профессиональной консультацией; используйте на свой страх и риск. Пожалуйста, соблюдайте правила платформы, не используйте для незаконной деятельности и избегайте обмена конфиденциальной личной информацией. Этот аккаунт не несет ответственности за возможное неправильное использование ИИ и не представляет официальную позицию REALITY. Благодарим за понимание и поддержку.',
+          rtl: false
+        },
+        'uk-UA': {
+          title: 'Відмова від відповідальності Українською',
+          content: 'Ласкаво просимо на цю трансляцію! Цей канал керується ШІ, пропонуючи просту взаємодію, але це не реальна людина і має обмежені можливості. ШІ не може повністю зрозуміти всі питання або надати глибоко персоналізовані відповіді. Надана інформація призначена лише для ознайомлення і не є професійною консультацією; використовуйте на власний ризик. Будь ласка, дотримуйтесь правил платформи, не використовуйте для незаконної діяльності та уникайте обміну конфіденційною особистою інформацією. Цей акаунт не несе відповідальності за можливе неправильне використання ШІ і не представляє офіційну позицію REALITY. Дякуємо за розуміння та підтримку.',
+          rtl: false
+        },
+        'ar-SA': {
+          title: 'إخلاء المسؤولية باللغة العربية',
+          content: 'مرحبًا بك في هذا البث المباشر! تتم إدارة هذه القناة بواسطة الذكاء الاصطناعي، وتقدم تفاعلات بسيطة ولكنها ليست شخصًا حقيقيًا ولديها قدرات محدودة. لا يمكن للذكاء الاصطناعي فهم جميع الأسئلة بشكل كامل أو تقديم ردود مخصصة بعمق. المعلومات المقدمة هي للإشارة فقط ولا تشكل نصيحة مهنية؛ استخدمها على مسؤوليتك الخاصة. يرجى الالتزام بلوائح المنصة، وعدم استخدامها لأنشطة غير قانونية، وتجنب مشاركة المعلومات الشخصية الحساسة. هذا الحساب لا يتحمل مسؤولية الاستخدام غير السليم المحتمل للذكاء الاصطناعي ولا يمثل الموقف الرسمي لـ REALITY. شكرًا لتفهمك ودعمك.',
+          rtl: true
+        },
+        'ja-JP': {
+          title: '日本語免責事項',
+          content: 'このライブへようこそ！ここはAIによって運営されており、簡単なインタラクションを提供していますが、実際の人間ではなく能力も限られています。すべての質問を完全に理解したり、深く個人化された返答を提供したりすることはできません。提供される情報は参考用であり、専門的なアドバイスを構成するものではありません。ご利用は自己責任でお願いします。プラットフォームの規則を守り、違法行為に使用せず、個人的な機密情報を開示しないでください。このアカウントはAIの不適切な使用に対して責任を負わず、REALITYの公式立場を代表するものでもありません。ご理解とご支援に感謝します。',
+          rtl: false
+        },
+        'ko-KR': {
+          title: '한국어 면책 조항',
+          content: '이 라이브 방송에 오신 것을 환영합니다! 이곳은 AI에 의해 운영되며 간단한 상호작용을 제공하지만, 실제 사람이 아니며 능력이 제한적입니다. AI는 모든 질문을 완전히 이해하거나 깊게 개인화된 답변을 제공할 수 없습니다. 제공되는 정보는 참고용일 뿐이며 전문적인 조언을 구성하지 않습니다; 자신의 책임 하에 사용하십시오. 플랫폼 규정을 준수하고, 불법 활동에 사용하지 마시며, 민감한 개인 정보를 공유하지 마십시오. 이 계정은 AI의 부적절한 사용에 대해 책임을 지지 않으며 REALITY의 공식 입장을 대표하지 않습니다. 이해와 지원에 감사드립니다.',
+          rtl: false
+        },
+        'zh-CN': {
+          title: '简体中文免责声明',
+          content: '欢迎来到本直播！这里由AI运营，提供简单互动，但非真人且能力有限，无法完全理解所有问题或提供深入个人化回复。信息仅供参考，不构成专业建议，使用风险自负。请遵守平台规定，勿用于违法行为，并请勿透露个人敏感信息。本账号不为AI可能的不当使用负责，亦不代表REALITY官方立场。感谢您的理解与支持。',
+          rtl: false
+        },
+        'zh-TW': {
+          title: '繁體中文免責聲明',
+          content: '歡迎來到本直播！這裡由AI運營，提供簡單互動，但非真人且能力有限，無法完全理解所有問題或提供深入個人化回覆。資訊僅供參考，不構成專業建議，使用風險自負。請遵守平台規定，勿用於違法行為，並請勿透露個人敏感資訊。本帳號不為AI可能的不當使用負責，亦不代表REALITY官方立場。感謝您的理解與支持。',
+          rtl: false
+        }
+      };
+
+      const buttons = document.querySelectorAll('.language-button');
+      const contentDiv = document.getElementById('disclaimerContent');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', function() {
+          const langCode = this.getAttribute('data-lang');
+          const disclaimer = disclaimers[langCode];
+
+          // Update active state
+          buttons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+
+          // Update content
+          contentDiv.className = 'disclaimer-content';
+          if (disclaimer.rtl) {
+            contentDiv.classList.add('rtl');
+          }
+
+          contentDiv.innerHTML = `
+            <h3>${disclaimer.title}</h3>
+            <p>${disclaimer.content}</p>
+          `;
+        });
+      });
+    });
+  </script>
+</body>
+</html>

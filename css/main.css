@@ -1,0 +1,197 @@
+/* Main CSS */
+
+/* Global theme transition */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* Typography Classes */
+.display-large {
+  font-size: var(--display-large);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.display-medium {
+  font-size: var(--display-medium);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.display-small {
+  font-size: var(--display-small);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.headline-large {
+  font-size: var(--headline-large);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.headline-medium {
+  font-size: var(--headline-medium);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--md-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.headline-small {
+  font-size: var(--headline-small);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.title-large {
+  font-size: var(--title-large);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--md-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.title-medium {
+  font-size: var(--title-medium);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-xs);
+}
+
+.title-small {
+  font-size: var(--title-small);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.body-large {
+  font-size: var(--body-large);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-md);
+}
+
+.body-medium {
+  font-size: var(--body-medium);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.body-small {
+  font-size: var(--body-small);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.section {
+  padding: var(--spacing-xxl) 0;
+}
+
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-content {
+  margin-left: var(--nav-rail-width);
+  padding: var(--spacing-lg);
+  min-height: 100vh;
+  background-color: var(--md-background);
+  color: var(--md-on-background);
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+/* Footer */
+footer {
+  background-color: var(--md-surface-variant);
+  padding: var(--spacing-xxl) 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+}
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.social-links a {
+  color: var(--md-primary);
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--md-on-primary-container);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+  color: var(--md-on-surface-variant);
+}
+
+/* Utilities */
+.technologies {
+  color: var(--md-outline);
+}
+
+.education-item {
+  margin-bottom: var(--spacing-md);
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  justify-content: center;
+}
+
+/* Navigation highlighting and effects */
+.nav-icon {
+  -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
+}
+
+/* Add active and hover pulse effect for better feedback */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.nav-icon:active .material-symbols-outlined {
+  animation: pulse 0.3s ease;
+}
