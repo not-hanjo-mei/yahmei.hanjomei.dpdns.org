@@ -1,0 +1,62 @@
+/* How It Works Page Styles */
+
+.flow-diagram {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  display: block;
+  border-radius: var(--md-shape-corner-medium);
+  border: 1px solid var(--md-outline-variant);
+}
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--md-primary-container);
+  color: var(--md-on-primary-container);
+  border-radius: 50%;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.tech-item {
+  background-color: var(--md-surface-variant);
+  color: var(--md-on-surface-variant);
+  padding: 8px 16px;
+  border-radius: var(--md-shape-corner-full);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tech-item .material-symbols-outlined {
+  font-size: 18px;
+}

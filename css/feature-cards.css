@@ -1,0 +1,49 @@
+/* Feature Cards and Roadmap Styles */
+
+.feature-card {
+  background-color: var(--md-surface);
+  border-radius: var(--md-shape-corner-medium);
+  box-shadow: 0 2px 8px var(--md-shadow);
+  padding: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  border-left: 4px solid var(--md-primary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px var(--md-shadow);
+}
+
+.feature-icon {
+  color: var(--md-primary);
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.feature-icon .material-symbols-outlined {
+  font-size: 36px;
+  margin-right: 12px;
+}
+
+.feature-status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--md-shape-corner-full);
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+  background-color: var(--md-tertiary-container);
+  color: var(--md-on-tertiary-container);
+}
+
+.roadmap-container {
+  margin-top: 40px;
+}
+
+/* Styles for pre-formatted text in feature cards */
+.body-medium.pre-line {
+  white-space: pre-line;
+}

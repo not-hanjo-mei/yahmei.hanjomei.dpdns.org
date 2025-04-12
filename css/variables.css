@@ -8,14 +8,14 @@
   --headline-medium: 1.75rem;
   --headline-small: 1.5rem;
   --title-large: 1.375rem;
-  --title-medium: 1rem;
-  --title-small: 0.875rem;
-  --label-large: 0.875rem;
-  --label-medium: 0.75rem;
-  --label-small: 0.6875rem;
-  --body-large: 1rem;
-  --body-medium: 0.875rem;
-  --body-small: 0.75rem;
+  --title-medium: 1.1rem;
+  --title-small: 0.975rem;
+  --label-large: 0.9rem;
+  --label-medium: 0.8rem;
+  --label-small: 0.75rem;
+  --body-large: 1.1rem;
+  --body-medium: 0.975rem;
+  --body-small: 0.85rem;
 
   /* Light Mode Colors */
   --md-primary: #34a853;

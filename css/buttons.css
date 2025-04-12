@@ -1,0 +1,19 @@
+/* Button Styles */
+
+/* Button group alignment */
+.button-group {
+  justify-content: center;
+}
+
+/* Back to main website button */
+.md-button-text.back-button {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.md-button-text .material-symbols-outlined.back-icon {
+  margin-right: 8px;
+}

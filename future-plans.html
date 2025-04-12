@@ -21,65 +21,14 @@
   <!-- Our CSS -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/navigation.css">
   <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/feature-cards.css">
   <link rel="stylesheet" href="css/responsive.css">
-
-  <!-- Font face for dot art -->
-  <style>
-    @font-face {
-      font-family: "CascadiaMono";
-      src: url('https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono/files/cascadia-mono-latin-400-normal.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-      font-display: block;
-    }
-
-    .feature-card {
-      background-color: var(--md-surface);
-      border-radius: var(--md-shape-corner-medium);
-      box-shadow: 0 2px 8px var(--md-shadow);
-      padding: 24px;
-      margin-bottom: 24px;
-      position: relative;
-      overflow: hidden;
-      border-left: 4px solid var(--md-primary);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px var(--md-shadow);
-    }
-
-    .feature-icon {
-      color: var(--md-primary);
-      display: flex;
-      align-items: center;
-      margin-bottom: 16px;
-    }
-
-    .feature-icon .material-symbols-outlined {
-      font-size: 36px;
-      margin-right: 12px;
-    }
-
-    .feature-status {
-      display: inline-block;
-      padding: 4px 12px;
-      border-radius: var(--md-shape-corner-full);
-      font-size: 0.8rem;
-      margin-bottom: 16px;
-      background-color: var(--md-tertiary-container);
-      color: var(--md-on-tertiary-container);
-    }
-
-    .roadmap-container {
-      margin-top: 40px;
-    }
-  </style>
 </head>
 <body>
   <!-- Navigation Rail (Sidebar) -->
@@ -152,51 +101,144 @@
       </div>
     </section>
 
-    <!-- Upcoming Features Section -->
+    <!-- Project Plan Section -->
     <section class="section">
       <div class="container">
-        <h2 class="headline-medium">Upcoming Features</h2>
+        <h2 class="headline-medium">Project Plan: Multilingual REALITY Livestreaming Bot</h2>
         <p class="body-large">
-          YAH Mei is constantly evolving. Here are some of the exciting features we're working on:
+          YAH Mei is evolving into a comprehensive livestreaming solution. Here's our detailed project plan:
         </p>
 
+        <!-- Core Architecture -->
         <div class="roadmap-container">
-          <!-- Feature 1 -->
           <div class="feature-card">
             <div class="feature-icon">
-              <span class="material-symbols-outlined">record_voice_over</span>
-              <h3 class="title-large">Voice Recognition with FunASR</h3>
+              <span class="material-symbols-outlined">architecture</span>
+              <h3 class="title-large">Core Architecture</h3>
             </div>
-            <span class="feature-status">Coming Soon</span>
-            <p class="body-medium">
-              We're integrating FunASR, an advanced speech recognition system, to allow YAH Mei to understand and respond to spoken commands and conversations.
-              This will enable more natural interactions, especially in live streaming environments where voice is the primary communication method.
+            <span class="feature-status">In Development</span>
+            <p class="body-medium pre-line">
+              Low-Cost Hybrid Model:
+              • PC (Controller + REALITY Environment)
+              • 2 Dedicated Android Phones (Processing)
+              • Cloud AI Services (Core Intelligence)
             </p>
           </div>
+        </div>
 
-          <!-- Feature 2 -->
+        <!-- Components & Roles -->
+        <h2 class="headline-medium">Components & Roles</h2>
+        
+        <!-- PC Component -->
+        <div class="roadmap-container">
           <div class="feature-card">
             <div class="feature-icon">
-              <span class="material-symbols-outlined">database</span>
-              <h3 class="title-large">RAG Long-Term Support</h3>
+              <span class="material-symbols-outlined">computer</span>
+              <h3 class="title-large">PC (Primary Controller & REALITY Environment)</h3>
             </div>
-            <span class="feature-status">Coming Soon</span>
-            <p class="body-medium">
-              Retrieval-Augmented Generation (RAG) will give YAH Mei the ability to access, remember, and utilize specific information across conversations.
-              This includes personal preferences, previous interactions, and knowledge databases, making conversations more contextual and personalized over time.
+            <span class="feature-status">In Development</span>
+            <p class="body-medium pre-line">
+              • <strong>OS:</strong> User's primary OS (Windows/Linux/Mac)
+              • <strong>Core Script:</strong> Python 3.x with LangChain framework for orchestration and AI interaction
+              • <strong>GUI Interface:</strong> Python-based dashboard using PyQt5 or Tkinter for:
+                  ◦◦◦◦ Real-time status monitoring
+                  ◦◦◦◦ Audio level visualization and control
+                  ◦◦◦◦ Conversation history display
+                  ◦◦◦◦ Manual override controls
+                  ◦◦◦◦ System configuration panel
+              • <strong>REALITY Environment:</strong> Android Emulator running REALITY App and ADBKeyboard
+              • <strong>Audio Routing:</strong> Voicemeeter for audio capture and playback management
+              • <strong>RAG Storage:</strong> Local ChromaDB for conversation history/memory
+              • <strong>AI API Client:</strong> OpenAI Python library for cloud and local services
+              • <strong>ADB Control:</strong> Python subprocess module for emulator commands
+              • <strong>Viewer Comment Reading:</strong> WebSocket connection to REALITY App
             </p>
           </div>
+        </div>
 
-          <!-- Feature 3 -->
+        <!-- Phone 1 Component -->
+        <div class="roadmap-container">
           <div class="feature-card">
             <div class="feature-icon">
-              <span class="material-symbols-outlined">desktop_windows</span>
-              <h3 class="title-large">GUI Support</h3>
+              <span class="material-symbols-outlined">smartphone</span>
+              <h3 class="title-large">Phone 1 (ASR Server)</h3>
             </div>
-            <span class="feature-status">Coming Soon</span>
+            <span class="feature-status">In Development</span>
+            <p class="body-medium pre-line">
+              • <strong>Hardware:</strong> Dedicated Android phone
+              • <strong>Environment:</strong> chroot Linux environment (Debian/Ubuntu ARM)
+              • <strong>ASR Engine:</strong> faster-whisper (using tiny or base multilingual models)
+              • <strong>Server:</strong> Python web server exposing an OpenAI-compatible API endpoint
+            </p>
+          </div>
+        </div>
+
+        <!-- Phone 2 Component -->
+        <div class="roadmap-container">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">smartphone</span>
+              <h3 class="title-large">Phone 2 (TTS Server)</h3>
+            </div>
+            <span class="feature-status">In Development</span>
+            <p class="body-medium pre-line">
+              • <strong>Hardware:</strong> Dedicated Android phone
+              • <strong>Environment:</strong> chroot Linux environment
+              • <strong>TTS Engine:</strong> MeloTTS with custom-trained EN/ZH/JA voice models
+              • <strong>Server:</strong> Python web server exposing an OpenAI-compatible API endpoint
+            </p>
+          </div>
+        </div>
+
+        <!-- Cloud Services Component -->
+        <div class="roadmap-container">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">cloud</span>
+              <h3 class="title-large">Cloud Services</h3>
+            </div>
+            <span class="feature-status">In Development</span>
             <p class="body-medium">
-              A user-friendly Graphical User Interface is being developed to make YAH Mei more accessible to users without technical backgrounds.
-              The interface will provide easy setup, customization options, and real-time monitoring of YAH Mei's activities, all with a clean and intuitive design.
+              AI Models providing LLM and Embedding capabilities, accessed via an OpenAI-compatible API endpoint (e.g., Google Gemini backend configured for compatibility).
+            </p>
+          </div>
+        </div>
+
+        <!-- Workflow Section -->
+        <h2 class="headline-medium">Workflow</h2>
+        <div class="roadmap-container">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">schema</span>
+              <h3 class="title-large">System Workflow</h3>
+            </div>
+            <span class="feature-status">In Development</span>
+            <p class="body-medium pre-line">
+              1. <strong>Input:</strong>
+                 • Voice: Collaborators speak within the REALITY App
+                 • Text: Viewers post text comments in the REALITY App
+              
+              2. <strong>Audio Capture:</strong> Emulator audio captured by Voicemeeter
+              
+              3. <strong>ASR Request:</strong> Core Script sends audio to ASR Server on Phone 1
+              
+              4. <strong>ASR Processing:</strong> Phone 1 transcribes audio and returns text
+              
+              5. <strong>Viewer Comment Reading:</strong> Core Script reads latest viewer comments
+              
+              6. <strong>LangChain Processing (PC):</strong>
+                 • Receives ASR transcription and viewer comments
+                 • Calls Cloud Embedding API to generate query vector
+                 • Queries local ChromaDB for relevant context
+                 • Constructs complete prompt with all information
+                 • Calls Cloud LLM API with the complete prompt
+                 • Receives text response and detects language
+              
+              7. <strong>TTS Request:</strong> Core Script sends text to TTS Server on Phone 2
+              
+              8. <strong>TTS Processing:</strong> Phone 2 generates audio from text
+              
+              9. <strong>Audio Output:</strong> Core Script plays audio through Voicemeeter
             </p>
           </div>
         </div>

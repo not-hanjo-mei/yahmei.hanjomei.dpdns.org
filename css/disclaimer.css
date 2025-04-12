@@ -1,0 +1,71 @@
+/* Disclaimer Page Styles */
+
+.disclaimer-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.disclaimer-container {
+  margin-top: var(--spacing-xl);
+}
+
+.language-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.language-button {
+  background-color: var(--md-surface-variant);
+  color: var(--md-on-surface-variant);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--md-shape-corner-full);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.language-button:hover {
+  background-color: var(--md-primary-container);
+  color: var(--md-on-primary-container);
+}
+
+.language-button.active {
+  background-color: var(--md-primary);
+  color: var(--md-on-primary);
+}
+
+.disclaimer-content {
+  background-color: var(--md-surface);
+  padding: var(--spacing-lg);
+  border-radius: var(--md-shape-corner-medium);
+  box-shadow: 0 2px 6px var(--md-shadow);
+  margin-bottom: var(--spacing-xl);
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.disclaimer-content h3 {
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 1.5rem;
+}
+
+.disclaimer-content p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+/* RTL support for Arabic */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .disclaimer-content {
+    border: 1px solid var(--md-outline-variant);
+  }
+}
