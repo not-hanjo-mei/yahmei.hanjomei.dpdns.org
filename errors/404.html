@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | YAH Mei</title>
+  <meta name="description" content="Page not found - YAH Mei">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+
+  <!-- Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans:400,500,700&display=swap">
+
+  <!-- Cascadia Mono for dot art -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono/index.css">
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/hero.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <style>
+    /* 404 Page Specific Styles */
+    .error-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 80vh;
+      padding: var(--spacing-xl);
+    }
+
+    .error-code {
+      font-size: 8rem;
+      font-weight: 700;
+      color: var(--md-primary);
+      margin-bottom: var(--spacing-md);
+      line-height: 1;
+    }
+
+    .error-message {
+      margin-bottom: var(--spacing-xl);
+    }
+
+    .error-actions {
+      display: flex;
+      gap: var(--spacing-md);
+      margin-top: var(--spacing-lg);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .error-illustration {
+      font-family: 'Cascadia Mono', monospace;
+      white-space: pre;
+      font-size: 14px;
+      line-height: 1.2;
+      color: var(--md-primary);
+      margin: var(--spacing-xl) 0;
+      text-align: left;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: 6rem;
+      }
+
+      .error-illustration {
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .error-code {
+        font-size: 4rem;
+      }
+
+      .error-illustration {
+        font-size: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Rail (Sidebar) -->
+  <nav class="nav-rail">
+    <div class="logo-container">
+      <span class="material-symbols-outlined">smart_toy</span>
+    </div>
+
+    <a href="../index.html#home" class="nav-icon" data-section="home">
+      <span class="material-symbols-outlined">home</span>
+      <span class="nav-label">Home</span>
+    </a>
+
+    <a href="../index.html#about" class="nav-icon" data-section="about">
+      <span class="material-symbols-outlined">person</span>
+      <span class="nav-label">About</span>
+    </a>
+
+    <div class="nav-rail-divider"></div>
+
+    <a href="../how-it-works.html" class="nav-icon" data-section="how">
+      <span class="material-symbols-outlined">code</span>
+      <span class="nav-label">How It Works</span>
+    </a>
+
+    <a href="../future-plans.html" class="nav-icon" data-section="future">
+      <span class="material-symbols-outlined">rocket_launch</span>
+      <span class="nav-label">Future Plans</span>
+    </a>
+
+    <a href="../disclaimer.html" class="nav-icon" data-section="disclaimer">
+      <span class="material-symbols-outlined">gavel</span>
+      <span class="nav-label">Disclaimer</span>
+    </a>
+  </nav>
+
+  <!-- Bottom Navigation (for mobile) -->
+  <nav class="bottom-nav">
+    <div class="nav-container">
+      <a href="../index.html#home" class="nav-icon" data-section="home">
+        <span class="material-symbols-outlined">home</span>
+        <span class="nav-label">Home</span>
+      </a>
+      <a href="../index.html#about" class="nav-icon" data-section="about">
+        <span class="material-symbols-outlined">person</span>
+        <span class="nav-label">About</span>
+      </a>
+      <a href="../how-it-works.html" class="nav-icon" data-section="how">
+        <span class="material-symbols-outlined">code</span>
+        <span class="nav-label">How</span>
+      </a>
+      <a href="../future-plans.html" class="nav-icon" data-section="future">
+        <span class="material-symbols-outlined">rocket_launch</span>
+        <span class="nav-label">Future</span>
+      </a>
+      <a href="../disclaimer.html" class="nav-icon" data-section="disclaimer">
+        <span class="material-symbols-outlined">gavel</span>
+        <span class="nav-label">Legal</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="headline-medium error-message">Page Not Found</h1>
+        <p class="body-large">Oops! The page you're looking for doesn't exist or has been moved.</p>
+        
+        <div class="error-actions">
+          <a class="md-button md-button-outlined" href="../index.html">
+            <span>Back to Home</span>
+            <span class="material-symbols-outlined">home</span>
+          </a>
+          <a class="md-button md-button-outlined" href="javascript:history.back()">
+            <span>Go Back</span>
+            <span class="material-symbols-outlined">arrow_back</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
